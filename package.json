@@ -1,10 +1,13 @@
 {
+  "homepage": "GPatriota.github.io/First-Project-React",
   "name": "ReactDo0",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --open --hot --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack --mode production"
   },
   "devDependencies": {
@@ -30,6 +33,7 @@
     "webpack-dev-server": "^5.2.0"
   },
   "dependencies": {
+    "gh-pages": "^6.3.0",
     "react": "^19.0.0"
   }
 }
